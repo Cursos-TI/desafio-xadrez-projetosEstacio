@@ -3,7 +3,8 @@
 
 int main()
 {
-	char linha[10] = {'A','B','C','D','E','F','G','H','I','J'};
+	//char coluna[10] = {'A','B','C','D','E','F','G','H','I','J'}; // Declarei essa variável vendo o exemplo do tema 4. 
+	// na linha 24 tem um incremento, pesquisado na internet, que dispensa essa declaração.
 	
 	int tabuleiro[10][10]; // Declarando a matriz tabuleiro
 	
@@ -20,10 +21,13 @@ int main()
 		printf("   "); // Imprime um espaço entre os títulos das colunas
 		for(int j = 0; j < 10; j++)
 		{
-			printf(" %c ", 'A' + j); // imprime o cabeçalho da coluna de A até J
+			printf(" %c ", 'A' + j); // imprime o cabeçalho da coluna de A até J. Esse printf poderia ser assim:
+								     // printf(" %c ", coluna[j]); conforme pesquisa na internet, vi 'A' + J, Entendi o objetivo		 
 			
 		}
 		//Posição do navio na horizontal linha 7 (indice 6) e colunas C, D, e E (indices 2, 3, e 4)
+		// A atribuição desses valores foi de pesquisa na internet, entendi o conceito assimilando os vídeos das aulas que
+		// printa os valores dos indices, aqui só atribuiu sem printar.
 		tabuleiro[6][2] = 3;
 		tabuleiro[6][3] = 3;
 		tabuleiro[6][4] = 3;
